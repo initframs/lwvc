@@ -1,0 +1,126 @@
+html,
+body {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+
+    background-color: black;
+    color: white;
+
+    font-family: monospace;
+}
+
+nav {
+    width: 100vw;
+    max-width: 100vw;
+    height: 7.5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+nav h2 {
+    font-size: 2vw;
+    margin: 2vw;
+}
+
+nav div {
+    margin: 1vw;
+}
+
+nav div>p {
+    font-size: 1vw;
+    margin: 0;
+}
+
+nav div input {
+    margin-top: 0.5vw;
+    background-color: black;
+    border: none;
+    padding: 5px;
+    color: white;
+}
+
+nav div input:focus {
+    border: none;
+    outline: none;
+}
+
+nav button {
+    height: 3.5vh;
+    width: 11vh;
+
+    margin: 2vw;
+
+    background-color: rgb(84, 84, 84);
+
+    color: white;
+
+    font-size: 1vw;
+
+    border: none;
+}
+
+.messages {
+    width: 100vw;
+    height: 82.5vh;
+}
+
+.messages>p {
+    font-size: 15px;
+    padding: 25px;
+    overflow-y: scroll;
+}
+
+.send {
+    width: 100vw;
+    height: 5vh;
+    margin: 0;
+    padding: 0;
+}
+
+.send>input {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 0;
+    border: none;
+
+    background-color: black;
+    color: white;
+
+    font-size: 1.25vw;
+
+    margin: 0;
+    padding: 10px;
+}
+
+.send>input:focus {
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 800px) {
+    nav h2 {
+        font-size: 5vw;
+    }
+
+    nav div>p {
+        font-size: 3vw;
+    }
+
+    nav input {
+        width: 20vw;
+    }
+
+    nav button {
+        height: 3.5vh;
+        width: 7vh;
+
+        font-size: 3vw;
+    }
+}

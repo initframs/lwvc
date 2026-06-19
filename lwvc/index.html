@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lwvc.css" />
+    <title>lwvc</title>
+</head>
+
+<body>
+    <nav>
+        <h2>lwvc</h2>
+        <div class="inputSection">
+            <p>addr</p>
+            <input id="serverAddr" type="text" placeholder="vsic.initframs.dev">
+        </div>
+        <div class="inputSection">
+            <p>port</p>
+            <input id="serverPort" type="number" placeholder="4755">
+        </div>
+        <div class="inputSection">
+            <p>name</p>
+            <input id="vsicName" type="text" placeholder="idk">
+        </div>
+        <div class="inputSection">
+            <p>jwt secret</p>
+            <input id="jwtSecret" type="password" placeholder="wssc jwt_secret">
+        </div>
+        <p>use tls: </p>
+        <input type="checkbox" id="useTls" name="useTls" checked />
+        <button onclick="connectToWssc()">connect</button>
+    </nav>
+    <div class="messages">
+        <p id="messages">
+            messages will appear here
+        </p>
+    </div>
+    <div class="send">
+        <input type="text" id="send" placeholder="type here...">
+    </div>
+    <script src="lwvc.js"></script>
+</body>
+
+</html>

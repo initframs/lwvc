@@ -1,2 +1,2 @@
 # lwvc
-light web vsic client
+lightweight web vsic client
